@@ -6,3 +6,9 @@
     background-color:#141414;
     color: #06FF07;
 }
+
+.min-vh-custom{
+    @media (max-width: 768px) {
+        min-height: 30vh !important;
+    }
+}

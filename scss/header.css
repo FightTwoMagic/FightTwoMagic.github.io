@@ -5,4 +5,10 @@
 .play-btn:hover {
   background-color: #141414;
   color: #06FF07;
+}
+
+@media (max-width: 768px) {
+  .min-vh-custom {
+    min-height: 30vh !important;
+  }
 }/*# sourceMappingURL=header.css.map */

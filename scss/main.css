@@ -7,6 +7,12 @@
   color: #06FF07;
 }
 
+@media (max-width: 768px) {
+  .min-vh-custom {
+    min-height: 30vh !important;
+  }
+}
+
 body {
   background-color: #141414;
   font-family: "JetBrains Mono light";
