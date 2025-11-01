@@ -13,7 +13,7 @@
                 <div class="modal-content bg-dark-portal">
                     <div class="modal-header">
                         <h5 class="modal-title toxic" id="exampleModalLabel">Подумайте!</h5>
-                        <button type="button" class="close btn btn-dark border-1" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close btn btn-dark border-1" data-bs-dismiss="modal" aria-label="Close">
                         <span class = "toxic" aria-hidden="true">x</span>
                         </button>
                     </div>
@@ -29,32 +29,36 @@
         </div>
 
         <header id = "play">
-            <div class="container-fluid p-0 m-0 min-vh-100" style="background-image: url('/images/top_block/BG.png'); background-size: cover; background-position: center;">
-                <nav class="navbar pb-1 pt-0 navbar-expand-md navbar-dark nav-pos fixed-top" id="mainNav">
-                    <div class="container-fluid ms-5">
+            <div class="container-fluid p-0 m-0 min-vh-100 row" style="background-image: url('/images/top_block/BG.png'); background-size: cover; background-position: center;">
+    <nav class="navbar pb-1 pt-0 navbar-expand-md navbar-dark fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <!-- Бургер-кнопка (показывается на md и меньше) -->
+            <button class="navbar-toggler border-toxic mt-3" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
-                        <button class="navbar-toggler d-none border-toxic" type="button" data-bs-toggle="collapse" 
-                                data-bs-target="#navbarNav" aria-controls="navbarNav">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="navbar-collapse" id="navbarNav">
-                            <div class="navbar-nav">
-                                <a class="btn btn-outline-light border-2 rounded-3 m-2 px-3 ms-0 fs-3" href="#trailer">Скрины</a>
-                                <a class="btn btn-outline-light border-2 rounded-3 m-2 px-3 fs-3" href="#coop">Кооператив</a>
-                                <a class="btn btn-outline-light border-2 rounded-3 m-2 px-3 fs-3" href="#support">Поддержка</a>
-                                <a class="btn btn-outline-light border-2 rounded-3 m-2 px-3 fs-3" href="#FAQ">FAQ</a>
-                                <a class="btn btn-outline-light border-2 rounded-3 m-2 px-3 me-0 fs-3" href="#form">Помощь</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                 <button type="button" class="btn rounded-3 px-5 play-btn fs-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip mb-2" data-bs-title="После нажатия загрузка начнется автоматически">Играть</button>
-             </div>
+            <!-- Меню (сворачивается на md и меньше) -->
+            <div class="collapse navbar-collapse row align-items-start" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="btn btn-outline-light bg-dark-portal col border-2 rounded-3 m-2 px-3 fs-3" href="#trailer">Скрины</a>
+                    <a class="btn btn-outline-light bg-dark-portal col border-2 rounded-3 m-2 px-3 fs-3" href="#coop">Кооператив</a>
+                    <a class="btn btn-outline-light bg-dark-portal col border-2 rounded-3 m-2 px-3 fs-3" href="#support">Поддержка</a>
+                    <a class="btn btn-outline-light bg-dark-portal col border-2 rounded-3 m-2 px-3 fs-3" href="#FAQ">FAQ</a>
+                    <a class="btn btn-outline-light bg-dark-portal col border-2 rounded-3 m-2 px-3 fs-3" href="#form">Помощь</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <div class = "container-fluid w-50 col p-0 align-self-end border-top border-white border-5">
+            <button type="button" class="btn btn-outline-light bg-dark-portal w-100 border-0 rounded-0 play-btn action" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip mb-2" data-bs-title="После нажатия загрузка начнется автоматически">Играть</button>
+        </div>
+        </div>
             <img src = "images/top_block/transition.png" class="d-block w-100 img-fluid" alt="...">
         </header>
 
         <section id = "trailer">
-            <div class=".bg-dark-subtle container-fluid min-vh-100 pt-5 mt-5">
+            <div class=".bg-dark-subtle container-fluid max-vh-100 pt-5 mt-5">
                 <h1 class = "text-center title mt-5">СКРИНЫ</h1>
                 <div class="bg-dark-subtle container-fluid w-50 p-0 mx-auto border-toxic">
                     <div id="carouselExample" class="carousel slide">
@@ -85,7 +89,7 @@
 
                 <div class="container-fluid w-50 border-toxic p-3 my-4" style="width: 18rem;">
                     <div class="card-body">
-                        <p class="card-text text-start">Сюжет Portal Reloaded заключается в том, что игрок просыпается от стазиса в центре развития Aperture Laboratories, и сразу отправляется на тесты включающие временные порталы.
+                        <p class="card-text text-start fs-6">Сюжет Portal Reloaded заключается в том, что игрок просыпается от стазиса в центре развития Aperture Laboratories, и сразу отправляется на тесты включающие временные порталы.
 
 В ходе игры испытуемого (игрока) обучают использованию порталов кубов и прочих механик, попутно рассказывая о том что комплекс был разрушен, а игрок — единственный перенесший путешествие через порталы времени.</p>
                     </div>
@@ -94,7 +98,7 @@
         </section>
 
         <section id = "coop">
-            <div class="container-fluid min-vh-100 pt-3 mt-5">
+            <div class="container-fluid max-vh-100 pt-3 mt-5">
                 <h1 class = "text-center title mt-5">КООПЕРАТИВ</h1>
                 
                 <div class="container-fluid hstack w-50 p-0">
@@ -103,7 +107,7 @@
                     </div>
                     <div class="container-fluid w-50 vstack p-0">
                         <div class="container-fluid border-toxic p-3 mx-auto mt-5">
-                            <p class="card-text text-start">Ваша команда отправляется в будущее, чтобы раздобыть важные данные, которые были утеряны во времени...</p>
+                            <p class="card-text text-start fs-6">Ваша команда отправляется в будущее, чтобы раздобыть важные данные, которые были утеряны во времени...</p>
                         </div>
                         <div class="container-fluid row align-items-end h-75 p-0 m-0 pb-2">
                             <div class = "col p-0"><button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="/images/Coop/discord.png" class = "img-fluid" alt="..."></button></div>
@@ -115,18 +119,18 @@
             </div>
         </section>
         <section id = "support">
-            <div class="container-fluid min-vh-100 pt-3 mt-5">
+            <div class="container-fluid max-vh-100 pt-3 mt-5">
                 <h1 class = "text-center title mt-5">Поддержка</h1>
 
                 <div class="container-fluid hstack w-50 p-0 my-4 align-items-start">
                     <div class="container-fluid p-0 m-0 w-50">
-                        <div class="container-fluid p-3 m-0 w-75 tab-content">
+                        <div class="container-fluid p-3 m-0 tab-content">
                                 <!-- Boosty таб -->
                                 <div class="tab-pane fade active show" id="boostyTab" role="tabpanel">
                                     <div class="container-fluid border-toxic p-3 ps-4">
                                         <p class="text-start m-0">
                                             <div class = "sub mb-2">Boosty:</div>
-                                            <ol class="m-0 ps-3">
+                                            <ol class="m-0 ps-3 fs-6">
                                                 <li>Юдин Николай</li>
                                                 <li>Харькова Кристина</li>
                                                 <li>Морозов Юрий</li>
@@ -191,7 +195,7 @@
         </section>
 
         <section id = "FAQ">
-            <div class="container-fluid min-vh-100 pt-3 mt-5">
+            <div class="container-fluid max-vh-100 pt-3 mt-5">
                 <h1 class = "text-center title mt-5">ОТВЕТЫ НА ВОПРОСЫ</h1>
                 <div class = "container-fluid w-50 p-0 mt-4">
                     <div class="accordion text-light bg-transparent" id="accordionExample">
@@ -260,7 +264,7 @@
             </div>
         </section>
         <section id = "form">
-            <div class="container-fluid min-vh-100 pt-3 mt-5">
+            <div class="container-fluid max-vh-100 pt-3 mt-5">
                 <h1 class = "text-center title mt-5">ХОТИТЕ ПОМОЧЬ?</h1>
                 <h2 class = "text-center main">Сообщите о баге</h2>
                 <div class = "container-fluid border-toxic w-50 mt-4 p-0">
@@ -295,8 +299,8 @@
             </div>
         </section>
         <footer>
-            <div class="position-relative container-fluid vh-50 p-0 row align-items-end pb-5" style="background-image: url('/images/Footer/BG.png'); background-size: cover; background-position: center top; min-height: 50vh;">
-                <div class="bg-white container-fluid w-50 p-4 mx-auto text-dark rounded-3">
+            <div class="position-relative container-fluid min-vh-100 p-0 row align-items-center pb-5" style="background-image: url('/images/Footer/BG.png'); background-size: cover; background-position: center top; min-height: 50vh;">
+                <div class="bg-white container-fluid w-75 p-4 mx-auto text-dark rounded-3">
                     <div class = "row mb-5">
                         <div class = "container-fluid col w-50">
                             <div class = "sub">Бизнесс предложения</div>
